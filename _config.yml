@@ -9,16 +9,12 @@ collections:
     title: Uploads
     output: true
 email: jeremy@jeremypbeasley.com
-description: Seattle's landmark fine-dining destination for 68 years, offering contemporary
-  Pacific Northwest fare in a midcentury-modern home.
-og_title: Canlis, Seattle's storied restaurant.
-og_photo: "/uploads/familymeal_share.jpg"
-dress_code: Go big. Dress up. Make a statement. You're beautiful, let it show! We
-  are a dress-respectful restaurant. No casual or athletic attire please. Men will
-  feel most comfortable in a suit or sport coat.
+description: "A six week pop-up in our parking lot featuring all the 🦀 you can handle, an actual giant shipwreck 🚢, luxury commodes, personal aquarium cocktails, copius amounts of hand sanitizer 💦."
+og_title: The Canlis Crab Shack
+og_photo: "/uploads/share.jpg"
 reservations_link: https://www.exploretock.com/canlis
-baseurl: 
-url: http://canlis.com
+baseurl:
+url: http://canliscrabshack.com
 twitter_username: canlis
 github_username: jeremypbeasley
 markdown: kramdown

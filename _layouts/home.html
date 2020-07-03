@@ -1,100 +1,54 @@
 {% include minihead.html %}
 
-<!-- Alert Bar -->
-{% if page.is_alert_shown == true %}
-  <div class="AlertBar Caption">
-    {{ page.alert_text}}
+<div class="logo"></div>
+
+
+<div class="ticker_container"><div class="ticker"></div></div>
+
+<section class="flex flex_center block bg_red">
+  <div class="textblock intro">
+    <h2><span class="underline">The Canlis Crab Shack</span> is a six week pop-up in our parking lot featuring all the crab 🦀 you can handle, an actual giant shipwreck 🚢, luxury commodes, personal aquarium cocktails, copius amounts of hand sanitizer 💦. Bibs provided. Bucket hats and sunglasses 🕶encouraged. </h2>
   </div>
-{% endif %}
-
-
-<div class="flex d-mt5"></div>
-
-<div class="flex flex-center">
-  <div class="WelcomeMessage ml3 mr3 mt3 CenterText">
-    <div class="mb2">In early March, we shut down our dining room. Fine dining is not what Seattle needs right now. Instead, we’re bringing the food to you. We’ve got this, Seattle.</div>
-    <img style="width: 200px; transform: rotate(-5deg)" src="/assets/_img/canlis_fam_signature.png"/>
+</section>
+<section class="flex flex_center block bg_yellow">
+  <div class="textblock">
+    <h2><span class="price"><div class="waves"><div class="waves_inside"></div></div>$59.95</span> per person.</h2>
+    <h2>Opens on <i>July 15th</i>. 🏖</h2>
+    <h2>Tickets go on sale here July 8th at 3:00PM PST. 💥</h2>
   </div>
-</div>
-
-<div class="flex flex-center">
-  <div class="Divider op20 mt1 d-mt4 mb3 d-mb0"></div>
-  <h2 class="p0 mt1 d-mt8 mb1 Caption CenterText">{{ page.food_concepts_title }}</h2>
-</div>
-
-<div class="flex flex-row m3 d-m5 flex-center">
-  {% for concept in page.food_concepts %}
-    <div class="col ConceptBlock">
-      <a class="NoLine" href="{{ concept.block_link }}">
-        <div class="d-m0 d-p3">
-          <img class="rounded10 mb2" src="{{ concept.image }}"/>
-          <!-- <div class="mb1"><i>Delivery or Pickup</i></div> -->
-          <h2 class="p0 mt0 mb1 Display2">{{ concept.title }}</h2>
-          <div class="p0 mt0 mb1 op60">{{ concept.desc }}</div>
-          <div class="flex">
-            {% for button in concept.buttons %}
-              <div class="col p0 mt0 mb3 mr3">
-                <a class="NoLine Caption" href="{{ button.link }}">{{ button.label }}</a>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-        <div class="Divider ShowMobile op20 mb3 d-mb0"></div>
-      </a>
-    </div>
-  {% endfor %}
-</div>
-
-<div class="flex flex-center">
-  <div class="Divider op20 mt1 d-mt4 mb3 d-mb0"></div>
-  <h2 class="p0 mt1 d-mt8 mb1 Caption CenterText">{{ page.fun_concepts_title }}</h2>
-</div>
-
-<div class="flex flex-row m3 d-m5 flex-center">
-  {% for concept in page.fun_concepts %}
-    <div class="col ConceptBlock">
-      <a class="NoLine" href="{{ concept.block_link }}">
-        <div class="d-m0 d-p3">
-          <img class="rounded10 mb2" src="{{ concept.image }}"/>
-          <!-- <div class="mb1"><i>Delivery or Pickup</i></div> -->
-          <h2 class="p0 mt0 mb1 Display2">{{ concept.title }}</h2>
-          <div class="p0 mt0 mb1 op60">{{ concept.desc }}</div>
-          <div class="flex">
-            {% for button in concept.buttons %}
-              <div class="col p0 mt0 mb3 mr3">
-                <a class="NoLine Caption" href="{{ button.link }}">{{ button.label }}</a>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-        <div class="Divider ShowMobile op20 mb3 d-mb0"></div>
-      </a>
-    </div>
-  {% endfor %}
-</div>
-
-<div class="flex flex-center">
-  <div class="Divider op20 mt1 d-mt4 mb0 d-mb7"></div>
-</div>
-
-<div class="flex flex-center p3">
-  <center>
-    <div class="col ConceptBlock">
-      <a class="NoLine" href="{{ page.weekly_spam.link }}">
-        <div class="d-m0 d-p3">
-          <img class="rounded10 mb2" src="{{ page.weekly_spam.image }}"/>
-        </div>
-      </a>
-      <h2 class="p0 mt1 d-mt0 mb1 Caption CenterText mb2">{{ page.weekly_spam.title }}</h2>
-      <p class="p2" style="max-width: 400px; text-align: center">{{ page.weekly_spam.desc }}</p>
-      <div class="EventsButton mb8 mt2">
-        <a class="Caption" target="_blank" href="{{ page.weekly_spam.link }}">
-          Sign up now
-        </a>
-      </div>
-    </div>
-  </center>
-</div>
+</section>
+<section class="flex flex_center block block_last bg_navy">
+  <div class="textblock">
+    <h2>Follow Canlis for the latest. <a href="http://instagram.com/canlisrestaurant" target="_blank"><span class="underline">@canlisrestaurant</span></a></h2>
+    <div class="crab"></div>
+  </div>
+</section>
+<section class="wave_container bg_navy ">
+  <div class="bigwaves">
+    <div class="bigwaves_inside"></div>
+  </div>
+  <div class="bigwaves">
+    <div class="bigwaves_inside"></div>
+  </div>
+  <div class="bigwaves">
+    <div class="bigwaves_inside"></div>
+  </div>
+  <div class="bigwaves">
+    <div class="bigwaves_inside"></div>
+  </div>
+  <div class="bigwaves">
+    <div class="bigwaves_inside"></div>
+  </div>
+  <div class="bigwaves">
+    <div class="bigwaves_inside"></div>
+  </div>
+  <div class="bigwaves">
+    <div class="bigwaves_inside"></div>
+  </div>
+  <div class="bigwaves">
+    <div class="bigwaves_inside"></div>
+  </div>
+</section>
 
 
 {% include minifooter.html %}

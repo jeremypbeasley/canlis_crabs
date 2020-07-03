@@ -1,391 +1,249 @@
 html {
   min-height 100%
 }
+
 * {
   -webkit-tap-highlight-color rgba(0, 0, 0, 0)
   -webkit-font-smoothing antialiased
   font-smoothing antialiased
   box-sizing border-box
 }
+
 body {
   height: 100%;
   width: 100vw;
-  overflow-y auto
-  overflow-x hidden
-  margin 0
-  font-family typeface-primary
-  background color-background
-  color color-text
-}
-#main {
+  overflow-y: auto;
   overflow-x: hidden;
+  margin: 0;
+  font-family: 'HelveticaNeue-Medium', Arial;
 }
+
 img {
   max-width: 100%;
-  // filter: grayscale(100%);
 }
-.Logo {
-  width: 7rem;
-  height: 1.5rem;
-  background-image: url("_img/canlis_logo_new.svg");
+
+i {
+  font-family: HelveticaNeue-MediumItalic
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex_center {
+  justify-content: center;
+}
+
+.block {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.block_last {
+  min-height: 0px;
+}
+
+.bg_red {
+  background: #FF530A
+}
+
+.bg_navy {
+  background: #22466F
+}
+
+.bg_navy h2,
+.bg_navy .textblock {
+  z-index: 9999999;
+}
+
+.bg_yellow {
+  background: #F7B500
+}
+
+.textblock {
+  margin: 9vw;
+  width: 40vw;
+}
+
+.textblock h2 {
+  color: black;
+  font-size: 3vw;
+  line-height: 120%;
+  padding-bottom: 1em;
+}
+
+.intro {
+  /* margin-top: 90vh */
+}
+
+.underline {
+  padding-bottom: -.1em;
+  border-bottom: .09em solid black;
+}
+
+.underline:hover {
+  border-color: white;
+}
+
+a, a:hover, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.ticker_container {
+  transform: rotate(-10deg)
+  position: fixed;
+  top: calc(60vh - 2.5vw);
+}
+
+.ticker {
+  background-image: url(/assets/_img/ticker2.svg);
+  background-size: contain;
   background-repeat: no-repeat;
-  text-indent: -9999999px;
-  background-size: 100%;
-  display: block;
-  border: none;
+  /* background-color: blue; */
+  height: 10vw;
+  width: 400vw;
+  position: fixed;
+
+  left: 0;
+  animation-name: scroll;
+  animation-duration: 15s;
+  /* animation-delay: 500ms; */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 800;
+}
+
+@keyframes scroll {
+  0% {
+    left: 0vw;
+  }
+  100% {
+    left: -200vw;
+  }
+}
+
+.logo {
+  background-image: url(/assets/_img/logo.svg);
+  background-size: cover;
+  /* background-color: blue; */
+  height: 10vw;
+  width: 10vw;
+  position: fixed;
+  top: 5vw;
+  right: 5vw;
+  animation-name: spin;
+  animation-duration: 300s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+.waves {
+  width: 3.1em;
+  height: 10px;
+  position: relative;
+  top: 1.5em;
+  overflow: hidden;
+}
+
+.waves_inside {
+  background: url(/assets/_img/wave.svg);
+  background-repeat: repeat-x;
+  background-size: ;
+  background-color: red;
+  width: 50vw;
+  height: .5em;
   position: absolute;
-  top: 8vw;
-  left: 6vw;
-  color: color-background;
-  text-align: center;
-  z-index: 100;
+  left: 0;
+  animation-name: scroll2;
+  animation-duration: 30s;
+  /* animation-delay: 500ms; */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 800;
+  top: 0;
 }
-@media laptop {
-  .Logo {
-    width: 7rem;
-    height: 1.5rem;
-    top: 4vw;
-    left: 4vw;
+
+@keyframes scroll2 {
+  0% {
+    left: 0vw;
+  }
+  100% {
+    left: -25vw;
   }
 }
-@media bigscreen {
-  .Logo {
-    width: 8rem;
-    height: 1.5rem;
-  }
-}
-.LogoWhite {
-  background-image: url("_img/canlis_logo_new_white.svg");
-}
-.LogoCenter {
-  // top: 30vw;
+
+.bigbox {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
   top: 0;
   left: 0;
+  background: rgba(0,30,0,.3)
+}
+
+.crab {
+  width: 2em;
+  height: 2em;
+  background-image: url(/assets/_img/crab.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wave_container {
+  overflow: auto;
+}
+
+.bigwaves {
+  width: 100vw;
+  height: 10px;
   position: relative;
+  top: 1.5em;
+  overflow: hidden;
 }
-@media laptop {
-  .LogoCenter {
-    left: 50%;
-    position: relative;
-    margin-left: -3.5rem;
-    top: 5vw;
-  }
-}
-.GlobalNav {
+
+.bigwaves_inside {
+  background: url(/assets/_img/wave.svg);
+  background-repeat: repeat-x;
+  background-size: ;
+  background-color: red;
+  width: 200vw;
+  height: .5em;
   position: absolute;
-  top: 0vw;
-  z-index: 90;
-  right: 0vw;
-  background: color-brand-dark;
-  width: 100vw;
-  opacity: 0;
-  transition: opacity 200ms ease-out;
-  height: 100vh;
-  box-shadow: 10px 0px 32px 0px rgba(0,0,0,0.37);
-}
-.GlobalNav.Open {
-  opacity: 1;
-}
-@media laptop {
-  .GlobalNav {
-    background: none;
-    box-shadow: none;
-    padding-top: calc(4vw + 8px);
-    padding-right: 4vw;
-    display: block;
-    opacity: 1;
-    width: 20vw;
-    padding-bottom: 0;
-    height: auto;
-    // background: rgba(255, 0, 0, 0.5);
-  }
-}
-/* .GlobalNav.Inverted {
-  opacity: 0;
-} */
-.GlobalNavInside {
-  flex-direction: row;
-  height: 100vh;
-  width: 100vw;
-}
-.GlobalNavInside ul {
-  width: 100%;
-}
-.GlobalNavInside ul li {
-  padding-right: 6.5vw;
-}
-.GlobalNavInside ul li a {
-  color: color-brand-light;
-}
-.GlobalNavToggle {
-  text-align: right;
-  cursor: pointer;
-}
-.GlobalNav ul {
-}
-.GlobalNav li {
-  margin-bottom: 3rem;
-}
-@media laptop {
-  .GlobalNav li {
-    margin-bottom: 1rem;
-  }
-}
-.GlobalNav li, .GlobalNav li a {
-  border: 0px;
-  text-align: right;
-  //transition: 200ms all ease-out;
-}
-.GlobalNav.Inverted li, .GlobalNav.Inverted li a {
-  color: white;
-}
-.SocialNav {
-  margin-top: 2rem;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-}
-@media laptop {
-  .SocialNav {
-    position: relative;
-  }
-}
-.SocialNav li {
-  float: right;
-}
-.SocialNav li a {
-  width: 30px;
-  height: 30px;
-  background-size: 97%;
-  background-repeat: no-repeat;
-  text-indent: -99999px;
-  display: block;
-  margin-left: 1rem;
-  //transition: opacity 200ms ease-out;
-}
-@media laptop {
-  .SocialNav li a {
-    margin-left: .5rem;
-  }
-}
-.SocialNav li a:hover {
-  opacity: .5;
-  border-bottom: none;
-}
-.SocialNav li a.Instagram {
-  background-image: url("/assets/_img/socialicon_insta_light.svg")
-}
-@media laptop {
-  .SocialNav li a.Instagram {
-    background-image: url("/assets/_img/socialicon_insta.svg")
-  }
-}
-.Inverted .SocialNav li a.Instagram {
-  background-image: url("/assets/_img/socialicon_insta_light.svg");
-}
-.NavHamburger {
-  position: absolute;
-  height: 14px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100%;
-  right: 0vw;
-  top: 0vw;
-  margin: 8vw 6.5vw;
-  z-index: 100;
-  width: 10em;
-  cursor: pointer;
-}
-.NavHamburger.Open {
-  background-position: bottom center;
-}
-@media laptop {
-  .NavHamburger {
-    display: none;
-  }
-}
-.NavHamburger div {
-  position: absolute;
-  text-align: right;
-  float: right;
-  width: 100%;
-  cursor: pointer;
-}
-.NavHamburger div span {
-  float: right;
-  margin-right: -.25em;
-  //border-bottom: 1px solid color-brand-dark;
-}
-.NavHamburger div span:after {
-  content: "";
-  display: block;
-  height: 1px;
-}
-.NavHamburger div span.Open:after {
-  background-color: color-brand-dark;
-  width: 3.1em;
-}
-.NavHamburger div span.Close:after {
-  background-color: color-brand-light;
-  width: 4em;
-}
-.NavHamburger div:nth-child(1) {
-  display: none;
-}
-.NavHamburger div:nth-child(0) {
-  display: none;
-}
-.NavHamburger.Open div span {
-  border-color: color-brand-light
-  color: color-brand-light
-}
-.NavHamburger.Open div:nth-child(1) {
-  display: inline;
-}
-.NavHamburger.Open div:nth-child(2) {
-  display: none;
-}
-.Inverted.NavHamburger .Open {
-  color: white;
-}
-.Inverted.NavHamburger div span.Open:after {
-  background-color: white;
-}
-// GENERAL
-
-.column.FirstThing {
-  margin-top: 40vh;
-}
-
-// FOOTER
-
-.GlobalFooter {
-  padding-top: 6vw;
-  padding-bottom: -10vw;
-  // background: #F2F1EF
-}
-@media laptop {
-  .GlobalFooter {
-    margin-top: 8vw;
-    padding-bottom: 5vw;
-  }
-}
-.GlobalFooter a {
-  border: none;
-}
-@media laptop {
-  .FooterLine {
-    background: color-text;
-    height: 1px;
-    width: 6.5vw;
-    position: relative;
-    margin-left: 0vw;
-    top: -5vw;
-  }
-}
-.RelaisLogo img {
-  background: transparent;
-  max-width: 150px;
-}
-
-// #main {
-//   transition: all 400ms ease-out
-//   opacity: 1
-// }
-// #main.is-exiting {
-//   opacity: 0;
-// }
-.PageContent {
-  transition: all 300ms ease-out
-  opacity: 1;
-}
-.PageContent.is-exiting {
-  opacity: 0;
-}
-
-.Divider {
-  width: 100%;
-  height: 1px;
-  background: black;
-}
-.Lifted {
-  border: 1px solid black;
-  box-shadow: 5px 5px 0px 0px black;
-}
-
-.LoadingShell {
-  position: fixed;
+  left: 0;
+  animation-name: scroll2;
+  animation-duration: 10s;
+  /* animation-delay: 500ms; */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 800;
   top: 0;
-  width: 100%;
-  height: 100vh;
-  background: color-background;
-  z-index: 99999;
-  animation: fade_out 1000ms 2000ms ease-out forwards, des_troy 1ms 3000ms ease-out forwards;
 }
-.logo_building {
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
-  top: 50%;
-  transform: translateY(-10) scale(2);
-  opacity: 0;
-  animation: fade_in 800ms ease-out forwards;
-  animation-delay: 0ms;
-}
-@media laptop {
-  .logo_building {
-    left: 50%;
-    transform: scale(2);
+
+@keyframes scroll2 {
+  0% {
+    left: -25vw;
   }
-}
-.logo_building svg {
-  overflow: visible;
-}
-.logo_building g {
-  stroke: color-gold
-}
-#Stroke-1,
-#Stroke-2,
-#Stroke-3,
-#Stroke-4,
-#Stroke-5 {
-  stroke-dasharray: 120;
-  stroke-dashoffset: 120;
-  animation: dash 5000ms cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-  animation-iteration-count: 10;
-}
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.HomeHeadline {
-  transform: translateY(10px);
-  opacity: 0;
-  animation: fade_in 800ms ease-out forwards, move_up 800ms ease-out forwards;
-  animation-delay: 3500ms;
-}
-@keyframes fade_in {
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade_out {
-  to {
-    opacity: 0;
-    transform: scale(1.05);
-  }
-}
-@keyframes move_up {
-  to {
-    transform: translateY(0px);
-  }
-}
-@keyframes des_troy {
-  to {
-    display: none;
-    margin-left: 100000000px;
-    left: 1000000px;
+  100% {
+    left: 0vw;
   }
 }

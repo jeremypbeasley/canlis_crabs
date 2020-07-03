@@ -1,37 +1,3 @@
-</div>
-<div class="Divider ShowMobile op20"></div>
-<footer class="m3 flex flex-center">
-  <div class="Caption flex">
-    <!-- <div class="m1 d-m1">
-      <a href="/media" class="NoLine">Media</a>
-    </div> -->
-    <div class="m1 d-m1">
-      <a href="https://www.instagram.com/canlisrestaurant/" target="_blank" class="NoLine">Instagram</a>
-    </div>
-    <div class="m1 d-m1">
-      <a href="https://giftcards.canlis.com/" target="_blank" class="NoLine">Gift Cards</a>
-    </div>
-    <div class="m1 d-m1">
-      <a href="/questions" class="NoLine">Questions?</a>
-    </div>
-  </div>
-  <!-- <a href="tel:2062833313" class="NoLine Caption">(206) 283-3313</a><Br><Br> -->
-  <br class="ShowDesktop"/>
-  <div class="d-m1 col-fullwidth CenterText d-mb10">&copy 1950 - {{ 'now' | date: "%Y" }} Canlis</div>
-</footer>
-</div>
-<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-<script src="/assets/master.js?version={{ 'now' | date: "%m%d%Y%H%M%S" }}"></script>
-
-<!-- Ensure the logo, navigation, and address are inverted (white) only on the home page due to dark background video -->
-{% if page.layout == 'home' %}
-  <script>
-    $(".GlobalNav.ShowDesktop").addClass("Inverted");
-    $(".AddressSidebar").addClass("Inverted");
-    $(".NavHamburger").addClass("Inverted");
-    $('.Logo').hide();
-  </script>
-{% endif %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48402864-1"></script>

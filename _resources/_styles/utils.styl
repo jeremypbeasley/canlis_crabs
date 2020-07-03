@@ -1,0 +1,61 @@
+.AlignCenter {
+	align-items: center;
+	display: flex;
+}
+
+.AlignTop {
+	align-items: flex-start;
+	display: flex;
+}
+
+.ShowDesktop {
+	// display: none;
+	visibility: hidden;
+}
+@media laptop {
+	.ShowDesktop {
+		// display: inline;
+		visibility: visible;
+	}
+}
+.ShowMobile {
+	// display: inline;
+	visibility: visible;
+}
+@media laptop {
+	.ShowMobile {
+		// display: none;
+		visibility: hidden;
+	}
+}
+
+.CenterText {
+	text-align: center;
+}
+
+// OPACITY
+
+.op20 {
+	opacity: .2;
+}
+.op30 {
+	opacity: .3;
+}
+.op50 {
+	opacity: .5;
+}
+.op60 {
+	opacity: .6;
+}
+
+.rounded10 {
+	border-radius: 10px;
+}
+
+.color-negative {
+	color: color-negative
+}
+
+.color-tock-blue {
+	color: color-tock-blue
+}

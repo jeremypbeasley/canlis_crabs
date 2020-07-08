@@ -1697,8 +1697,13 @@ h5 {
   justify-content: center;
 }
 .block {
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100vw;
+}
+@media (min-width: 62em) {
+  .block {
+    min-height: 0;
+  }
 }
 .block_last {
   min-height: 70vh;
@@ -1710,6 +1715,7 @@ h5 {
 }
 .bg_red {
   background: #ff530a;
+/* background: #FA6400; */
 }
 .bg_navy {
   background: #22466f;
@@ -1718,32 +1724,41 @@ h5 {
 .bg_navy .textblock {
   z-index: 9999999;
 }
+.bg_navy p {
+  color: #fff;
+}
 .bg_yellow {
   background: #f7b500;
+  background: #fff800;
 }
 .textblock {
   margin: 9vw;
+  font-size: 6vw;
 }
 @media (min-width: 62em) {
   .textblock {
     margin: 9vw;
     width: 40vw;
+    font-size: 3vw;
   }
 }
-.textblock h2 {
-  color: #000;
-  font-size: 6vw;
+.textblock p {
   line-height: 120%;
   padding-bottom: 1em;
 }
 @media (min-width: 62em) {
-  .textblock h2 {
-    font-size: 3vw;
+  .textblock p {
     padding-bottom: 1em;
   }
 }
 .intro {
   margin-top: 50vw;
+}
+@media (min-width: 62em) {
+  .intro {
+    margin-top: 10vw;
+/* margin-top: 90vh */
+  }
 }
 .underline {
   padding-bottom: -0.1em;
@@ -1751,6 +1766,13 @@ h5 {
 }
 .underline:hover {
   border-color: #fff;
+}
+.underline.invert {
+  border-color: #fff;
+}
+.underline.invert:hover {
+  border-color: #000;
+  color: #000;
 }
 a,
 a:hover,
@@ -1761,6 +1783,9 @@ a:visited {
 a:hover {
   color: #fff;
 }
+a.invert {
+  color: #fff;
+}
 .ticker_container {
   transform: rotate(-10deg) scale(2);
   position: fixed;
@@ -1768,46 +1793,54 @@ a:hover {
 }
 @media (min-width: 62em) {
   .ticker_container {
-    transform: scale(1);
-    top: calc(60vh - 2.5vw);
+    transform: scale(1) rotate(-90deg);
+    left: 13vw;
+    top: 80vw;
+    background: #f00;
   }
 }
 .ticker {
-  background-image: url("/assets/_img/ticker2.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-/* background-color: blue; */
   height: 10vw;
   width: 400vw;
   position: fixed;
   left: 0;
   animation-name: scroll;
-  animation-duration: 15s;
+  animation-duration: 8s;
 /* animation-delay: 500ms; */
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   z-index: 800;
 }
+.ticker img {
+  height: 8vw;
+  margin-right: 1vw;
+}
+.ticker .burst {
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 .logo {
   background-image: url("/assets/_img/logo.svg");
   background-size: cover;
-/* background-color: blue; */
   height: 30vw;
   width: 30vw;
-  top: 10vw;
+  bottom: 10vw;
   right: 10vw;
   position: absolute;
   animation-name: spin;
   animation-duration: 300s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  z-index: 999999;
 }
 @media (min-width: 62em) {
   .logo {
     position: fixed;
-    height: 10vw;
-    width: 10vw;
-    top: 5vw;
+    height: 20vw;
+    width: 20vw;
+    bottom: 5vw;
     right: 5vw;
   }
 }
@@ -1890,12 +1923,53 @@ background-size
   z-index: 800;
   top: 0;
 }
+.menurow {
+  margin-bottom: 1em;
+  font-size: 1.5vw;
+}
+.menucolumn {
+  flex-grow: 1;
+  width: 45%;
+  margin-right: 5%;
+}
+.menurow .menucolumn:nth-child(2) {
+  font-family: HelveticaNeue-MediumItalic;
+  opacity: 0.5;
+}
+.signup {
+  height: 60px;
+}
+.signup input {
+  height: 50px;
+  padding: 30px;
+  font-size: 20px;
+  outline: none;
+  border: 3px solid #000;
+  background: #fff;
+  box-shadow: 10px 10px 0px 0px #000;
+}
+.signup button {
+  height: 66px;
+  padding: 20px;
+  font-size: 20px;
+  color: #000;
+  outline: none;
+  border: 3px solid #000;
+  background: #fff;
+  box-shadow: 10px 10px 0px 0px #000;
+  margin-left: -2.5px;
+}
+.signup button:hover {
+  box-shadow: 0px 0px 0px 0px #000;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 @-moz-keyframes scroll {
   0% {
     left: 0vw;
   }
   100% {
-    left: -200vw;
+    left: -93vw;
   }
 }
 @-webkit-keyframes scroll {
@@ -1903,7 +1977,7 @@ background-size
     left: 0vw;
   }
   100% {
-    left: -200vw;
+    left: -93vw;
   }
 }
 @-o-keyframes scroll {
@@ -1911,7 +1985,7 @@ background-size
     left: 0vw;
   }
   100% {
-    left: -200vw;
+    left: -93vw;
   }
 }
 @keyframes scroll {
@@ -1919,7 +1993,7 @@ background-size
     left: 0vw;
   }
   100% {
-    left: -200vw;
+    left: -93vw;
   }
 }
 @-moz-keyframes spin {

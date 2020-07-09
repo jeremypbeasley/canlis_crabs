@@ -42,18 +42,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .block {
-  min-height: 90vh;
   width: 100vw;
-}
-
-@media laptop {
-  .block {
-    min-height: 0;
-  }
-}
-
-.block_last {
-  min-height: 70vh;
 }
 
 @media laptop {
@@ -215,7 +204,7 @@ a.invert {
   background-size: cover;
   height: 30vw;
   width: 30vw;
-  bottom: 10vw;
+  bottom: -10vw;
   right: 10vw;
   position: absolute;
   animation-name: spin;
@@ -313,6 +302,7 @@ a.invert {
 
 .wave_container {
   overflow: auto;
+  min-height: 70vh
 }
 
 .bigwaves {
@@ -414,6 +404,7 @@ a.invert {
   background: white;
   box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
   margin-bottom: 1em;
+  border-radius: 0;
 }
 
 @media laptop {
@@ -434,6 +425,7 @@ a.invert {
   background: blue;
   outline: none;
   margin-top: 2em;
+  border-radius: 0;
 }
 
 @media laptop {
@@ -501,7 +493,12 @@ a.invert {
   position: absolute;
   top: 0;
   right: 10vw;
-  transform: scale(2);
+}
+
+@media laptop {
+  .seagull {
+    transform: scale(2);
+  }
 }
 
 .color-white {
@@ -512,8 +509,13 @@ a.invert {
   display: inline;
   max-width: 1em;
   position: relative;
+  transform: scale(1.1)
 }
 
 .fixed {
   position: fixed;
+}
+
+.times {
+  font-family: Times-Roman, Times, serif
 }

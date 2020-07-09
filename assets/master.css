@@ -1698,16 +1698,7 @@ h5 {
   justify-content: center;
 }
 .block {
-  min-height: 90vh;
   width: 100vw;
-}
-@media (min-width: 62em) {
-  .block {
-    min-height: 0;
-  }
-}
-.block_last {
-  min-height: 70vh;
 }
 @media (min-width: 62em) {
   .block_last {
@@ -1835,7 +1826,7 @@ a.invert {
   background-size: cover;
   height: 30vw;
   width: 30vw;
-  bottom: 10vw;
+  bottom: -10vw;
   right: 10vw;
   position: absolute;
   animation-name: spin;
@@ -1905,6 +1896,7 @@ a.invert {
 }
 .wave_container {
   overflow: auto;
+  min-height: 70vh;
 }
 .bigwaves {
   width: 100vw;
@@ -1983,6 +1975,7 @@ a.invert {
   background: #fff;
   box-shadow: 4px 4px 0px 0px #000;
   margin-bottom: 1em;
+  border-radius: 0;
 }
 @media (min-width: 62em) {
   .signup input.email {
@@ -2001,6 +1994,7 @@ a.invert {
   background: #00f;
   outline: none;
   margin-top: 2em;
+  border-radius: 0;
 }
 @media (min-width: 62em) {
   .signup .button {
@@ -2048,7 +2042,11 @@ a.invert {
   position: absolute;
   top: 0;
   right: 10vw;
-  transform: scale(2);
+}
+@media (min-width: 62em) {
+  .seagull {
+    transform: scale(2);
+  }
 }
 .color-white {
   color: #fff;
@@ -2057,9 +2055,13 @@ a.invert {
   display: inline;
   max-width: 1em;
   position: relative;
+  transform: scale(1.1);
 }
 .fixed {
   position: fixed;
+}
+.times {
+  font-family: Times-Roman, Times, serif;
 }
 @-moz-keyframes dial {
   0% {

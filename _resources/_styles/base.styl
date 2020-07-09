@@ -153,29 +153,35 @@ a.invert {
   color: white;
 }
 
-.small {
-  font-size: .5em;
+@media laptop {
+  .small {
+    font-size: .5em;
+  }
 }
 
 .ticker_container {
-  transform: rotate(-10deg) scale(2);
-  position: fixed;
-  top: calc(75vh - 2.5vw);
+  /* transform: rotate(-5deg) ; */
+  top: 20vw;
+  position: absolute;
+  width: 100vw;
+  overflow: auto;
+  height: 20vw;
 }
 
 @media laptop {
   .ticker_container {
+    position: fixed;
     transform: scale(1) rotate(-90deg);
-    left: 12vw;
-    top: 80vw;
-    background: red;
+    left: -15vw;
+    top: 25vw;
+    width: 100vh;
   }
 }
 
 .ticker {
   height: 10vw;
   width: 400vw;
-  position: fixed;
+  position: absolute;
   left: 0;
   animation-name: scroll;
   animation-duration: 8s;
@@ -185,9 +191,21 @@ a.invert {
   z-index: 800;
 }
 
+@media laptop {
+  .ticker {
+    position: fixed;
+  }
+}
+
 .ticker img {
-  height: 8vw;
+  height: 12vw;
   margin-right: 1vw;
+}
+
+@media laptop {
+  .ticker img {
+    height: 8vw;
+  }
 }
 
 .ticker .burst {
@@ -345,13 +363,27 @@ a.invert {
 }
 
 .menurow {
-  margin-bottom: 1em;
+  margin-bottom: 4em;
   font-size: 1.5vw;
 }
+
+@media laptop {
+  .menurow {
+    margin-bottom: 1em;
+  }
+}
+
 .menucolumn {
-  flex-grow: 1;
-  width: 45%;
-  margin-right: 5%;
+  font-size: 5vw;
+}
+
+@media laptop {
+  .menucolumn {
+    font-size: 1.5vw;
+    flex-grow: 1;
+    width: 45%;
+    margin-right: 5%;
+  }
 }
 
 .menurow .menucolumn:nth-child(2) {
@@ -360,29 +392,52 @@ a.invert {
 }
 
 .signup {
-  height: 60px;
+  overflow: visible;
 }
 
 .signup input {
-  height: 50px;
-  padding: 30px;
-  font-size: 20px;
+  height: 30px;
+  padding: 25px;
+  font-size: 15px;
   outline: none;
+  width: 100%;
   border: 3px solid black;
   background: white;
-  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+  margin-bottom: 1em;
+}
+
+@media laptop {
+  .signup input {
+    width: inherit;
+    height: 50px;
+    padding: 30px;
+    font-size: 20px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    margin-bottom: 0;
+  }
 }
 
 .signup button {
-  height: 66px;
-  padding: 20px;
-  font-size: 20px;
+  height: 52px;
+  padding: 15px 27px;
+  font-size: 15px;
   color: black;
   outline: none;
   border: 3px solid black;
   background: white;
-  box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-  margin-left: -2.5px;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+}
+
+@media laptop {
+  .signup button {
+    height: 66px;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    margin-bottom: 0;
+    margin-left: -2.5px;
+  }
 }
 
 .signup button:hover {
@@ -405,13 +460,20 @@ a.invert {
 .safe {
   background: url(/uploads/island.gif);
   background-size: cover;
+  background-position: center center;
 }
 
 .flyover {
-  height: 30vw;
+  height: 90vw;
   width: 100%;
   background: url(/uploads/3dcrabs.gif);
   background-size: cover;
+}
+
+@media laptop {
+  .flyover {
+    height: 30vw;
+  }
 }
 
 .safe p {

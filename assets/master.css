@@ -1788,26 +1788,32 @@ a:hover {
 a.invert {
   color: #fff;
 }
-.small {
-  font-size: 0.5em;
+@media (min-width: 62em) {
+  .small {
+    font-size: 0.5em;
+  }
 }
 .ticker_container {
-  transform: rotate(-10deg) scale(2);
-  position: fixed;
-  top: calc(75vh - 2.5vw);
+/* transform: rotate(-5deg) ; */
+  top: 20vw;
+  position: absolute;
+  width: 100vw;
+  overflow: auto;
+  height: 20vw;
 }
 @media (min-width: 62em) {
   .ticker_container {
+    position: fixed;
     transform: scale(1) rotate(-90deg);
-    left: 12vw;
-    top: 80vw;
-    background: #f00;
+    left: -15vw;
+    top: 25vw;
+    width: 100vh;
   }
 }
 .ticker {
   height: 10vw;
   width: 400vw;
-  position: fixed;
+  position: absolute;
   left: 0;
   animation-name: scroll;
   animation-duration: 8s;
@@ -1816,9 +1822,19 @@ a.invert {
   animation-iteration-count: infinite;
   z-index: 800;
 }
+@media (min-width: 62em) {
+  .ticker {
+    position: fixed;
+  }
+}
 .ticker img {
-  height: 8vw;
+  height: 12vw;
   margin-right: 1vw;
+}
+@media (min-width: 62em) {
+  .ticker img {
+    height: 8vw;
+  }
 }
 .ticker .burst {
   animation-name: spin;
@@ -1925,40 +1941,72 @@ a.invert {
   top: 0;
 }
 .menurow {
-  margin-bottom: 1em;
+  margin-bottom: 4em;
   font-size: 1.5vw;
 }
+@media (min-width: 62em) {
+  .menurow {
+    margin-bottom: 1em;
+  }
+}
 .menucolumn {
-  flex-grow: 1;
-  width: 45%;
-  margin-right: 5%;
+  font-size: 5vw;
+}
+@media (min-width: 62em) {
+  .menucolumn {
+    font-size: 1.5vw;
+    flex-grow: 1;
+    width: 45%;
+    margin-right: 5%;
+  }
 }
 .menurow .menucolumn:nth-child(2) {
   font-family: HelveticaNeue-MediumItalic;
   opacity: 0.5;
 }
 .signup {
-  height: 60px;
+  overflow: visible;
 }
 .signup input {
-  height: 50px;
-  padding: 30px;
-  font-size: 20px;
+  height: 30px;
+  padding: 25px;
+  font-size: 15px;
   outline: none;
+  width: 100%;
   border: 3px solid #000;
   background: #fff;
-  box-shadow: 10px 10px 0px 0px #000;
+  box-shadow: 4px 4px 0px 0px #000;
+  margin-bottom: 1em;
+}
+@media (min-width: 62em) {
+  .signup input {
+    width: inherit;
+    height: 50px;
+    padding: 30px;
+    font-size: 20px;
+    box-shadow: 10px 10px 0px 0px #000;
+    margin-bottom: 0;
+  }
 }
 .signup button {
-  height: 66px;
-  padding: 20px;
-  font-size: 20px;
+  height: 52px;
+  padding: 15px 27px;
+  font-size: 15px;
   color: #000;
   outline: none;
   border: 3px solid #000;
   background: #fff;
-  box-shadow: 10px 10px 0px 0px #000;
-  margin-left: -2.5px;
+  box-shadow: 4px 4px 0px 0px #000;
+}
+@media (min-width: 62em) {
+  .signup button {
+    height: 66px;
+    padding: 20px;
+    font-size: 20px;
+    box-shadow: 10px 10px 0px 0px #000;
+    margin-bottom: 0;
+    margin-left: -2.5px;
+  }
 }
 .signup button:hover {
   box-shadow: 0px 0px 0px 0px #000;
@@ -1968,12 +2016,18 @@ a.invert {
 .safe {
   background: url("/uploads/island.gif");
   background-size: cover;
+  background-position: center center;
 }
 .flyover {
-  height: 30vw;
+  height: 90vw;
   width: 100%;
   background: url("/uploads/3dcrabs.gif");
   background-size: cover;
+}
+@media (min-width: 62em) {
+  .flyover {
+    height: 30vw;
+  }
 }
 .safe p {
   text-shadow: 0 0 10px #000;

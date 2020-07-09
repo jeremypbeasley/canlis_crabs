@@ -1943,6 +1943,24 @@ a.invert {
     margin-right: 5%;
   }
 }
+.safetyrow {
+  margin-bottom: 1em;
+}
+.safetycolumn {
+  font-size: 5vw;
+}
+.safetyrow .safetycolumn:nth-child(2) {
+  font-family: Times;
+  margin-top: 0.5em;
+}
+@media (min-width: 62em) {
+  .safetycolumn {
+    font-size: 1.5vw;
+    flex-grow: 2;
+    width: 65%;
+    margin-right: 5%;
+  }
+}
 .menurow .menucolumn:nth-child(2) {
   font-family: HelveticaNeue-MediumItalic;
   opacity: 0.5;
@@ -1950,7 +1968,7 @@ a.invert {
 .signup {
   overflow: visible;
 }
-.signup input {
+.signup input.email {
   height: 30px;
   padding: 25px;
   font-size: 15px;
@@ -1962,8 +1980,7 @@ a.invert {
   margin-bottom: 1em;
 }
 @media (min-width: 62em) {
-  .signup input {
-    width: inherit;
+  .signup input.email {
     height: 50px;
     padding: 30px;
     font-size: 20px;
@@ -1971,30 +1988,26 @@ a.invert {
     margin-bottom: 0;
   }
 }
-.signup button {
+.signup .button {
   height: 52px;
   padding: 15px 27px;
   font-size: 15px;
-  color: #000;
+  color: #fff;
+  background: #00f;
   outline: none;
-  border: 3px solid #000;
-  background: #fff;
-  box-shadow: 4px 4px 0px 0px #000;
+  margin-top: 2em;
 }
 @media (min-width: 62em) {
-  .signup button {
+  .signup .button {
     height: 66px;
     padding: 20px;
     font-size: 20px;
-    box-shadow: 10px 10px 0px 0px #000;
     margin-bottom: 0;
     margin-left: -2.5px;
   }
 }
-.signup button:hover {
-  box-shadow: 0px 0px 0px 0px #000;
-  margin-top: 10px;
-  margin-left: 10px;
+.signup .button:hover {
+  background: linear-gradient(180deg, #7b87ff 0%, #1300ff 100%);
 }
 .safe {
   background: url("/uploads/island.gif");
@@ -2029,6 +2042,9 @@ a.invert {
   position: absolute;
   top: 0;
   right: 10vw;
+}
+.color-white {
+  color: #fff;
 }
 @-moz-keyframes dial {
   0% {

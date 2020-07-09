@@ -368,16 +368,39 @@ a.invert {
   }
 }
 
+.safetyrow {
+  margin-bottom: 1em;
+}
+
+.safetycolumn {
+  font-size: 5vw;
+}
+
+.safetyrow .safetycolumn:nth-child(2) {
+  font-family: Times;
+  margin-top: .5em;
+}
+
+@media laptop {
+  .safetycolumn {
+    font-size: 1.5vw;
+    flex-grow: 2;
+    width: 65%;
+    margin-right: 5%;
+  }
+}
+
 .menurow .menucolumn:nth-child(2) {
   font-family: HelveticaNeue-MediumItalic;
   opacity: .5;
+
 }
 
 .signup {
   overflow: visible;
 }
 
-.signup input {
+.signup input.email {
   height: 30px;
   padding: 25px;
   font-size: 15px;
@@ -390,8 +413,7 @@ a.invert {
 }
 
 @media laptop {
-  .signup input {
-    width: inherit;
+  .signup input.email {
     height: 50px;
     padding: 30px;
     font-size: 20px;
@@ -400,32 +422,28 @@ a.invert {
   }
 }
 
-.signup button {
+.signup .button {
   height: 52px;
   padding: 15px 27px;
   font-size: 15px;
-  color: black;
+  color: white;
+  background: blue;
   outline: none;
-  border: 3px solid black;
-  background: white;
-  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+  margin-top: 2em;
 }
 
 @media laptop {
-  .signup button {
+  .signup .button {
     height: 66px;
     padding: 20px;
     font-size: 20px;
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
     margin-bottom: 0;
     margin-left: -2.5px;
   }
 }
 
-.signup button:hover {
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
-  margin-top: 10px;
-  margin-left: 10px;
+.signup .button:hover {
+  background: linear-gradient(180deg, rgba(123,135,255,1) 0%, rgba(19,0,255,1) 100%);
 }
 
 /* .fight {
@@ -478,4 +496,8 @@ a.invert {
   position: absolute;
   top: 0;
   right: 10vw;
+}
+
+.color-white {
+  color: white;
 }

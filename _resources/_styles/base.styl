@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   font-family: 'HelveticaNeue-Medium', Arial;
+  background-color: #FF530A;
 }
 
 img {
@@ -67,7 +68,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .bg_navy {
-  background: #22466F
+  background: #22466F;
+  background: blue;
 }
 
 .bg_navy h2,
@@ -91,7 +93,7 @@ h1, h2, h3, h4, h5 {
 
 @media laptop {
   .textblock {
-    margin: 9vw;
+    margin: 6vw;
     width: 40vw;
     font-size: 3vw;
     position: relative;
@@ -111,7 +113,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .intro {
-  margin-top: 50vw;
+  margin-top: 15vw;
 }
 
 @media laptop {
@@ -159,69 +161,49 @@ a.invert {
   }
 }
 
-.ticker_container {
-  /* transform: rotate(-5deg) ; */
-  top: 20vw;
-  position: absolute;
+.dial_container {
   width: 100vw;
-  overflow: auto;
-  height: 20vw;
+  height: 9.5rem;
+  background: blue;
+  overflow: hidden;
 }
 
 @media laptop {
-  .ticker_container {
+  .dial_container {
+    width: 100vw;
+    height: 9.5rem;
+    background: blue;
     position: fixed;
-    transform: scale(1) rotate(-90deg);
-    left: -15vw;
+    overflow: hidden;
     top: 25vw;
-    width: 100vh;
+    left: -34vw;
+    transform: rotate(-90deg);
   }
 }
 
-.ticker {
-  height: 10vw;
-  width: 400vw;
-  position: absolute;
-  left: 0;
-  animation-name: scroll;
-  animation-duration: 8s;
-  /* animation-delay: 500ms; */
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  z-index: 800;
+.dial {
+  width: 200vw;
+  /* width of bg image */
+  min-width: 3200px;
+  height: 5.5rem;
+  margin: 2rem 0 6rem;
+  font-size: 0;
+  background: url(/uploads/dial.png) 0 center repeat-x;
+  background-size: auto 5.5rem;
+  transform: translateX(0);
+  animation: dial 10s linear infinite;
 }
 
-@media laptop {
-  .ticker {
-    position: fixed;
-  }
-}
-
-.ticker img {
-  height: 12vw;
-  margin-right: 1vw;
-}
-
-@media laptop {
-  .ticker img {
-    height: 8vw;
-  }
-}
-
-.ticker .burst {
-  animation-name: spin;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes scroll {
-  0% {
-    left: 0vw;
-  }
-  100% {
-    left: -93vw;
-  }
+@keyframes dial {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+	100% {
+    /* half the width of bg image */
+		-webkit-transform: translateX(-1600px);
+		transform: translateX(-1600px)
+	}
 }
 
 .logo {
@@ -485,4 +467,15 @@ a.invert {
   height: 25px;
   background: url(/uploads/rope.png) repeat-x;
   background-size: 25px;
+  margin-bottom: 20px;
+}
+
+.rope:nth-child(1) {
+  margin-top: 20px;
+}
+
+.seagull {
+  position: absolute;
+  top: 0;
+  right: 10vw;
 }

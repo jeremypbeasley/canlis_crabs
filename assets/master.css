@@ -1814,7 +1814,7 @@ a.invert {
   }
 }
 .dial {
-  width: 200vw;
+  width: 2000vw;
 /* width of bg image */
   min-width: 3200px;
   height: 5.5rem;
@@ -1823,7 +1823,12 @@ a.invert {
   background: url("/uploads/dial.png") 0 center repeat-x;
   background-size: auto 5.5rem;
   transform: translateX(0);
-  animation: dial 10s linear infinite;
+  animation: dial 30s linear infinite;
+}
+@media (min-width: 62em) {
+  .dial {
+    animation: dial 130s linear infinite;
+  }
 }
 .logo {
   background-image: url("/assets/_img/logo.svg");
@@ -2013,6 +2018,7 @@ a.invert {
   background: url("/uploads/island.gif");
   background-size: cover;
   background-position: center center;
+  min-height: 90vh;
 }
 .flyover {
   height: 90vw;
@@ -2042,52 +2048,53 @@ a.invert {
   position: absolute;
   top: 0;
   right: 10vw;
+  transform: scale(2);
 }
 .color-white {
   color: #fff;
 }
+.emoji {
+  display: inline;
+  max-width: 1em;
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
 @-moz-keyframes dial {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
 /* half the width of bg image */
-    -webkit-transform: translateX(-1600px);
-    transform: translateX(-1600px);
+    transform: translateX(-2000vw);
   }
 }
 @-webkit-keyframes dial {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
 /* half the width of bg image */
-    -webkit-transform: translateX(-1600px);
-    transform: translateX(-1600px);
+    transform: translateX(-2000vw);
   }
 }
 @-o-keyframes dial {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
 /* half the width of bg image */
-    -webkit-transform: translateX(-1600px);
-    transform: translateX(-1600px);
+    transform: translateX(-2000vw);
   }
 }
 @keyframes dial {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
 /* half the width of bg image */
-    -webkit-transform: translateX(-1600px);
-    transform: translateX(-1600px);
+    transform: translateX(-2000vw);
   }
 }
 @-moz-keyframes spin {

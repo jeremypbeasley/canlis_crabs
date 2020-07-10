@@ -9,13 +9,11 @@ collections:
     title: Uploads
     output: true
 email: jeremy@jeremypbeasley.com
-description: "A six week pop-up in our parking lot featuring all the \U0001F980 you
-  can handle, an actual giant shipwreck \U0001F6A2, luxury commodes, personal aquarium
-  cocktails, copius amounts of hand sanitizer \U0001F4A6."
+description: "An outdoor restaurant in our parking lot featuring buckets of crab, icy beverages and cocktails on draft 🍹, luxury commodes on wheels 🚽, and copious amounts of hand sanitizer. 💦"
 og_title: The Canlis Crab Shack
 og_photo: "/uploads/share.jpg"
 reservations_link: https://www.exploretock.com/canlis
-baseurl: 
+baseurl:
 url: http://canliscrabshack.com
 twitter_username: canlis
 github_username: jeremypbeasley

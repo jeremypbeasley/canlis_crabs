@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5 {
 
 .bg_navy h2,
 .bg_navy .textblock {
-  z-index: 9999999;
+  z-index: 9;
 }
 
 .bg_navy p {
@@ -211,7 +211,7 @@ a.invert {
   animation-duration: 300s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  z-index: 999999;
+  z-index: 9;
 }
 
 @media laptop {
@@ -261,7 +261,7 @@ a.invert {
   /* animation-delay: 500ms; */
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  z-index: 800;
+  z-index: 9;
   top: 0;
   transform: scale(.7);
   transform-origin: 0 0;
@@ -311,7 +311,7 @@ a.invert {
   position: relative;
   top: 1.5em;
   overflow: hidden;
-  z-index: 999999;
+  z-index: 9;
 }
 
 .bigwaves_inside {
@@ -325,7 +325,7 @@ a.invert {
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  z-index: 800;
+  z-index: 9;
   top: 0;
 }
 
@@ -518,4 +518,40 @@ a.invert {
 
 .times {
   font-family: Times-Roman, Times, serif
+}
+
+
+.tickets {
+  position: fixed;
+  bottom: 5vw;
+  width: 100vw;
+  z-index: 999;
+}
+
+@media laptop {
+  .tickets {
+    bottom: 2vw;
+  }
+}
+
+.tickets a {
+  background: blue;
+  width: 250px;
+  margin-left: -125px;
+  left: 50%;
+  position: relative;
+  box-shadow: 10px 10px 5px 0px rgba(255,255,255,1), -10px -10px 5px 0px rgba(255,248,0,1);
+  padding: 20px 40px;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'HelveticaNeue-Medium', Arial;
+  text-align: center;
+  z-index: 999;
+}
+
+.tickets a:hover {
+  box-shadow: 10px 10px 5px 0px rgba(255,248,0,1), -10px -10px 5px 0px rgba(255,255,255,1);
+  background: #FF530A;
+  color: white;
+  /* transform: translateY(10px) */
 }

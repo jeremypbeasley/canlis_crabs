@@ -18,57 +18,17 @@
 <section class="flex flex_center block bg_yellow">
   <div class="textblock">
     <img class="seagull" src="/uploads/seagull2.gif"/>
-    <p><span class="price"><div class="waves"><div class="waves_inside"></div></div>$69.95</span> per person.</p>
-    <div class="menurow flex">
-      <div class="menucolumn">
-       Potato Chips
+    <p><span class="price"><div class="waves"><div class="waves_inside"></div></div>{{ page.price }}</span> per person.</p>
+    {% for item in page.menu %}
+      <div class="menurow flex">
+        <div class="menucolumn">
+         {{ item.title }}
+        </div>
+        <div class="menucolumn">
+          {{ item. desc}}
+        </div>
       </div>
-      <div class="menucolumn">
-        with a Green Garlic-Miso and Smoked Sockeye Salmon Dip
-      </div>
-    </div>
-    <div class="menurow flex">
-      <div class="menucolumn">
-        <img class="emoji" src="/uploads/star.gif"/>
-       1 Whole Dungeness Crab
-        <img class="emoji" src="/uploads/star.gif"/>
-      </div>
-      <div class="menucolumn">
-        New Potatoes, Spring Onions, and Fennel with Kani Miso Remoulade and Drawn Butter
-      </div>
-    </div>
-    <div class="menurow flex">
-      <div class="menucolumn">
-        Corn Roasted in the Wood Oven
-      </div>
-      <div class="menucolumn">
-        Chile pequin, Kewpie Mayo, Lime, Cilantro
-      </div>
-    </div>
-    <div class="menurow flex">
-      <div class="menucolumn">
-        Heirloom Tomato and Stonefruit Salad
-      </div>
-      <div class="menucolumn">
-        Lardo
-      </div>
-    </div>
-    <div class="menurow flex">
-      <div class="menucolumn">
-        Sea Lettuce Parker House Rolls
-      </div>
-      <div class="menucolumn">
-        Cultured Butter
-      </div>
-    </div>
-    <div class="menurow flex">
-      <div class="menucolumn">
-        Lemon Chiffon Cake
-      </div>
-      <div class="menucolumn">
-        Lemon-Olive Oil Curd
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </section>
 <section class="flex flex_center block bg_navy safe">
@@ -79,61 +39,22 @@
 </section>
 <section class="flex flex_center block bg_red">
   <div class="textblock">
+  {% for item in page.safety %}
     <div class="safetyrow flex">
       <div class="safetycolumn">
-        Social Distancing
+         {{ item.title }}
       </div>
       <div class="safetycolumn">
-        This entirely outdoor restaurant has been specifically built to accommodate a minimum of six feet between seated guests. Our team will go out of their way to give you space and we will greatly minimize the number of staff serving any given table.
+        {{ item. desc}}
       </div>
     </div>
-    <div class="safetyrow flex">
-      <div class="safetycolumn">
-        Masks
-      </div>
-      <div class="safetycolumn">
-        Will be worn by our staff at all times. <b>Guests without masks will not be allowed into the restaurant</b> and must wear them when not seated at the table. Gloves will be worn by our staff whenever handling food, drinks, and plates and are changed frequently.
-      </div>
-    </div>
-    <div class="safetyrow flex">
-      <div class="safetycolumn">
-        Temperatures <img class="emoji" src="/uploads/ball.gif"/>
-      </div>
-      <div class="safetycolumn">
-        Are taken and logged daily for all staff members. Guests will also be temp-checked before entry to the Crab Shack. No guests with a temperature over 100.4F will be admitted, nor anyone in their party. The reservation will be cancelled and the entire party fully refunded.
-      </div>
-    </div>
-    <div class="safetyrow flex">
-      <div class="safetycolumn">
-        Handwashing
-      </div>
-      <div class="safetycolumn">
-        Sinks are provided for guests both inside and outside of restrooms. Crab shack staff are required to frequently wash their hands during shifts. <img class="emoji" src="/uploads/wash.gif"/>
-      </div>
-    </div>
-    <div class="safetyrow flex">
-      <div class="safetycolumn">
-        Sanitation
-      </div>
-      <div class="safetycolumn">
-        All tables have built-in hand sanitizer pumps and are wrapped in polyurethane to enable the highest level of cleaning between seatings.
-      </div>
-    </div>
-    <div class="safetyrow flex">
-      <div class="safetycolumn">
-        Smiling <span class="color-white" style="font-size: 1.5em">☺</span>
-      </div>
-      <div class="safetycolumn">
-        100% authorized and at times absolutely necessary to maintain sanity and remind each other that we’re all in this together.
-      </div>
-    </div>
+  {% endfor %}
   </div>
 </section>
 <section class="flex flex_center block bg_yellow">
   <div class="rope"></div>
   <div class="textblock">
-    <p>Opens on <i>July 16th</i>. 🏖</p>
-    <p>Tickets for July 28th - August 1st go on sale here on July 22nd at 1:00PM.💥</p>
+    <p>{{ page.tickets_prompt }}</p>
     <p>Want us to send you an email when the next tickets become available?</p>
     <div class="signup">
       <form action="https://canlis.us17.list-manage.com/subscribe/post?u=32f6e6c858c315fd7e45caafc&amp;id=09bdc2345e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -265,7 +186,7 @@
 </section>
 
 <section class="flex flex_center block bg_red p4 mb10">
-  <p class="times">This page was last edited on 9 July 2020, at 10:28 (UTC).   ✐   © 1950 - 2020 Canlis</p><br>
+  <p class="times">{{ page.edited }}</p><br>
   <p class="times"></p>
 
 </section>

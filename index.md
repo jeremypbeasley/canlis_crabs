@@ -22,18 +22,6 @@ menu:
 - title: Lemon Chiffon Cake
   desc: Lemon-Olive Oil Curd
 safety:
-<<<<<<< HEAD
-- title: 'Social Distancing'
-  desc: 'This entirely outdoor restaurant has been specifically built to accommodate a minimum of six feet between seated guests. Our team will go out of their way to give you space and we will greatly minimize the number of staff serving any given table.'
-- title: 'Masks'
-  desc: 'Will be worn by our staff at all times. Guests without masks will not be allowed into the restaurant and must wear them when not seated at the table. Gloves will be worn by our staff whenever handling food, drinks, and plates and are changed frequently.'
-- title: 'Temperatures <img class="emoji" src="/uploads/ball.gif"/>'
-  desc: 'Are taken and logged daily for all staff members. Guests will also be temp-checked before entry to the Crab Shack. No guests with a temperature over 100.4F will be admitted, nor anyone in their party. The reservation will be cancelled and the entire party fully refunded.'
-- title: 'Handwashing'
-  desc: 'Sinks are provided for guests inside the restrooms and in the dining area. Crab shack staff are required to frequently wash their hands during shifts. <img class="emoji" src="/uploads/wash.gif"/>'
-- title: 'Sanitation'
-  desc: 'All tables have built-in hand sanitizer pumps and are wrapped in polyurethane to enable the highest level of cleaning between seatings.'
-=======
 - title: Social Distancing
   desc: This entirely outdoor restaurant has been specifically built to accommodate
     a minimum of six feet between seated guests. Our team will go out of their way
@@ -56,9 +44,7 @@ safety:
 - title: Sanitation
   desc: All tables have built-in hand sanitizer pumps and are wrapped in polyurethane
     to enable the highest level of cleaning between seatings.
->>>>>>> 70e41ec2dbc80f080473932b4649400d923ccbd0
 - title: 'Smiling <span class="color-white" style="font-size: 1.5em">☺</span>'
   desc: 100% authorized and at times absolutely necessary to maintain sanity and remind
     each other that we’re all in this together.
 ---
-

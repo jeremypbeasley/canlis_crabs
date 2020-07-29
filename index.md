@@ -25,7 +25,7 @@ safety:
 - title: 'Temperatures <img class="emoji" src="/uploads/ball.gif"/>'
   desc: 'Are taken and logged daily for all staff members. Guests will also be temp-checked before entry to the Crab Shack. No guests with a temperature over 100.4F will be admitted, nor anyone in their party. The reservation will be cancelled and the entire party fully refunded.'
 - title: 'Handwashing'
-  desc: 'Sinks are provided for guests both inside and outside of restrooms. Crab shack staff are required to frequently wash their hands during shifts. <img class="emoji" src="/uploads/wash.gif"/>'
+  desc: 'Sinks are provided for guests inside the restrooms and in the dining area. Crab shack staff are required to frequently wash their hands during shifts. <img class="emoji" src="/uploads/wash.gif"/>'
 - title: 'Sanitation'
   desc: 'All tables have built-in hand sanitizer pumps and are wrapped in polyurethane to enable the highest level of cleaning between seatings.'
 - title: 'Smiling <span class="color-white" style="font-size: 1.5em">☺</span>'

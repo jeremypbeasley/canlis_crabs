@@ -1,13 +1,12 @@
 ---
 title: Home
-layout: home
-price: "$69.95"
-tickets_prompt: "Tickets for July 28th - August 1st go on sale here on July 22nd at
-  1:00PM. \U0001F3D6"
+price: "$74.95"
+tickets_prompt: "Tickets for August 11th - August 15th go on sale here on August 5th
+  at 1:00PM. \U0001F3D6"
 edited: This page was last edited on 29 July 2020, at 10:28 (UTC). ✐ © 1950 - 2020
   Canlis
 menu:
-- title: Potato Chips
+- title: 'Housemade Potato Chips '
   desc: with a Green Garlic-Miso and Smoked Sockeye Salmon Dip
 - title: <img class="emoji" src="/uploads/star.gif">1 Whole Dungeness Crab <img class="emoji"
     src="/uploads/star.gif">
@@ -15,12 +14,14 @@ menu:
     Butter
 - title: Corn Roasted in the Wood Oven
   desc: Chile pequin, Kewpie Mayo, Lime, Cilantro
-- title: Heirloom Tomato and Stonefruit Salad
-  desc: Lardo
+- title: Heirloom Tomato Carpaccio
+  desc: Stonefruit, Fermented Cherry, Shallot
 - title: Sea Lettuce Parker House Rolls
   desc: Cultured Butter
-- title: Lemon Chiffon Cake
-  desc: Lemon-Olive Oil Curd
+- title: Berry Galette
+  desc: 
+- title: 'NOTE:'
+  desc: "***Menu Subject to Change***"
 safety:
 - title: Social Distancing
   desc: This entirely outdoor restaurant has been specifically built to accommodate
@@ -47,5 +48,6 @@ safety:
 - title: 'Smiling <span class="color-white" style="font-size: 1.5em">☺</span>'
   desc: 100% authorized and at times absolutely necessary to maintain sanity and remind
     each other that we’re all in this together.
+layout: home
 ---
 

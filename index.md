@@ -56,8 +56,3 @@ safety:
 layout: home
 ---
 
-<script>
-
-window.location = "https://canlis.com/";
-
-</script>

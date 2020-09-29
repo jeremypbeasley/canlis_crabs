@@ -1,24 +1,25 @@
 ---
 title: Home
-price: "$74.95"
-tickets_prompt: "Tickets for August 11th - August 15th go on sale here on August 5th
-  at 1:00PM. \U0001F3D6"
+price: 'Lunch Tuesday-Thursday: $59.95 per person.<br> Lunch Friday/Saturday & Dinner
+  all week - $74.95'
+tickets_prompt: "\U0001F3D6"
 edited: This page was last edited on 29 July 2020, at 10:28 (UTC). ✐ © 1950 - 2020
   Canlis
 menu:
-- title: 'Housemade Potato Chips '
+- title: 'Potato Chips '
   desc: with a Green Garlic-Miso and Smoked Sockeye Salmon Dip
-- title: <img class="emoji" src="/uploads/star.gif">1 Whole Dungeness Crab <img class="emoji"
-    src="/uploads/star.gif">
+- title: '<img class="emoji" src="/uploads/star.gif">Lunch Tuesday-Thursday: 1 Half
+    Dungeness Crab<br> <img class="emoji" src="/uploads/star.gif">Lunch Friday/Saturday
+    & Dinner All Week: 1 Whole Dungeness Crab <img class="emoji" src="/uploads/star.gif">'
   desc: New Potatoes, Spring Onions, and Fennel with Kani Miso Remoulade and Drawn
     Butter
 - title: Corn Roasted in the Wood Oven
   desc: Chile pequin, Kewpie Mayo, Lime, Cilantro
 - title: Heirloom Tomato Carpaccio
-  desc: Stonefruit, Fermented Cherry, Shallot
+  desc: Fermented Cherry, Shallot, and Strawberry Vinegar
 - title: Sea Lettuce Parker House Rolls
   desc: Cultured Butter
-- title: Berry Galette
+- title: Seasonal Dessert
   desc: 
 - title: 'NOTE:'
   desc: "***Menu Subject to Change***"
@@ -51,3 +52,8 @@ safety:
 layout: home
 ---
 
+<script>
+
+window.location = "https://canlis.com/";
+
+</script>

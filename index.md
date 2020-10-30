@@ -7,9 +7,8 @@ edited: This page was last edited on 29 July 2020, at 10:28 (UTC). ✐ © 1950 -
 menu:
 - title: 'Potato Chips '
   desc: with a Green Garlic-Miso and Smoked Sockeye Salmon Dip
-- title: '<img class="emoji" src="/uploads/star.gif">Lunch Tuesday-Thursday: 1 Half
-    Dungeness Crab<br> <img class="emoji" src="/uploads/star.gif">Lunch Friday/Saturday
-    & Dinner All Week: 1 Whole Dungeness Crab <img class="emoji" src="/uploads/star.gif">'
+- title: <img class="emoji" src="/uploads/star.gif"> 1 Whole Dungeness Crab <img class="emoji"
+    src="/uploads/star.gif">
   desc: New Potatoes, Spring Onions, and Fennel with Kani Miso Remoulade and Drawn
     Butter
 - title: Corn Roasted in the Wood Oven
@@ -20,8 +19,6 @@ menu:
   desc: Cultured Butter
 - title: Seasonal Dessert
   desc: 
-- title: 'NOTE:'
-  desc: "***Menu Subject to Change***"
 safety:
 - title: Social Distancing
   desc: This entirely outdoor restaurant has been specifically built to accommodate

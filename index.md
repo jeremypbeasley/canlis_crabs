@@ -1,7 +1,6 @@
 ---
 title: Home
-price: 'Lunch Tuesday-Thursday: $59.95 per person.<br> Lunch Friday/Saturday & Dinner
-  all week - $74.95'
+price: "$59.95 per person"
 tickets_prompt: "\U0001F3D6"
 edited: This page was last edited on 29 July 2020, at 10:28 (UTC). ✐ © 1950 - 2020
   Canlis
